@@ -54,24 +54,21 @@ if num4%7==0:
 else:
     print(num4, "is not divisible by 7" )
 
-# # Check login eligibility:
-# # Username = admin
-# # Password = 1234
+# Check login eligibility:
+# Username = admin
+# Password = 1234
 
 user=str(input("Enter Username "))
 password=int(input ("Enter password "))
 
-if user=="admin" and password==1234:
-    print("Access Granted")
-
-elif user=="admin" and password!=1234:
-    print("invalid password ")
-
-elif user!="admin" and password==1234:
-    print("invalid Username ")
+if user=="admin":
+    if password==1234:
+        print("Access Granted")
+        
+    else:
+        print("invalid password")
 else:
-    print("Access Denied")
-
+    print("invalid Username ")
 
 # Check scholarship eligibility:
 # Marks ≥ 80 AND Attendance ≥ 75
@@ -79,12 +76,17 @@ else:
 mark=int(input("Enter your Marks "))
 attendance=int(input("Enter your Attendance "))
 
-if mark>=80 and attendance>=75:
+if mark >= 80 and attendance >= 75:
     print("Eligible for a Scholarship")
-elif mark>=80 and attendance<75:
+
+elif mark >= 80 and attendance < 75:
     print("Due to less attendance, not eligible for a scholarship")
-elif mark<80 and attendance>=75:
+
+elif mark < 80 and attendance >= 75:
     print("Due to less marks, not eligible for a scholarship")
+
+else:
+    print("Due to less marks and attendance, not eligible for a scholarship")
 
 
 # Check admission eligibility:
@@ -119,6 +121,8 @@ elif choice==4:
     print("Division of both is",num9/num10)
 else:
     print("try again")
+    if num10==0:
+        print("cannot divide by 0")
     
 # ATM Machine Simulation Menu:
 bal=float(input("Enter Your balance "))
