@@ -1,5 +1,3 @@
+for i in range (1,100):
+#     i=1
     
-password= ""
-while password!="Gurman":
-    password=input("enter password:")
-print("login successful")

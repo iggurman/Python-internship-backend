@@ -1,43 +1,43 @@
-# # # # # a= 5
-# # # # # print(type(a))
+a= 5
+print(type(a))
 
-# # # # # b=5.12
-# # # # # print(type(b))
+b=5.12
+print(type(b))
 
-# # # # # c="hhh"
-# # # # # print(type(c))
+c="hhh"
+print(type(c))
 
 
-# # # # a=10
-# # # # b=11
-# # # # print(a!=b)
+a=10
+b=11
+print(a!=b)
 
-# # # # print (a==b and b>a)
-# # # # print (a==b or b>a)
+print (a==b and b>a)
+print (a==b or b>a)
 
-# # # list=[1,2,3,4,5]
-# # # if 10 not in list:
-# # #     print("true")
+list=[1,2,3,4,5]
+if 10 not in list:
+    print("true")
     
-# # # else:
-# # #     print("false")
+else:
+    print("false")
     
-# # age= 19  
-# # if age >= 18:
-# #     print("ready")
-# # else:
-# #     print("not ready")
+age= 19  
+if age >= 18:
+    print("ready")
+else:
+    print("not ready")
     
 
-# a= 10
-# b=20  
-# c=20
-# if a > b and a==c:
-#     print("a is greater ")
-# elif c>b:
-#     print("ggg")
-# else:
-#     print("yo")
+a= 10
+b=20  
+c=20
+if a > b and a==c:
+    print("a is greater ")
+elif c>b:
+    print("ggg")
+else:
+    print("yo")
     
 
 a=100

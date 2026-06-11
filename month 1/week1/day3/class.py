@@ -36,7 +36,7 @@ while password!="Gurman":
     password=input("enter password:")
 print("login successful")
 
-# lenght of string in a list
+# length of string in a list
 list =["apple","banana","mango"]
 
 for num in list:
