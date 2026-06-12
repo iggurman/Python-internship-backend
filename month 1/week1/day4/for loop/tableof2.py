@@ -5,11 +5,10 @@ for i in range(1,11,1):
     print(num, "x", i, "=" ,table)
 
 #using while loop
-num = 2
-i=1
+num=2
+i=0
 while i<=10:
     table=num*i
     print(num, "x", i, "=" ,table)
-    i+=1
+    i=i+1
 
-    
