@@ -1,51 +1,55 @@
 # simple if
-age=21
-if age>18:
+age = 21
+if age > 18:
     print("can vote")
-    
+
 # if else
-age=21
-if age>18:
+age = 21
+if age > 18:
     print("can vote")
 else:
     print("cant vote")
-    
+
 # if-elif-else
 
-grades=80
-if grades>=90:
+grades = 80
+if grades >= 90:
     print("A")
-elif grades>=80:
+elif grades >= 80:
     print("B")
 else:
     print("F")
-    
-#nested if
-age=27
-license=True
-if age>=18:
+
+# nested if
+age = 27
+license = True
+if age >= 18:
     if license:
         print("can drive")
-        
-        
+
+
 # one line condition (ternary operator)
-age=20
-a="legal" if age>18 else "not legal"
-print (a)
+age = 20
+a = "legal" if age > 18 else "not legal"
+print(a)
 
 # not operator (logical operators)
-drun=False
+drun = False
 if not drun:
     print("yo")
-    
-# while loop--- repeats the code until the condition remains true
 
-count=5
-while count<5:
+# while loop--- repeats the code until the condition remains true (when we know the number of iterations the code should go through)
+
+count = 5
+while count < 5:
     print(count)
-    count-=1
-    
+    count -= 1
+
 # for loop with list
-list=[10,20,30,40]
+list = [10, 20, 30, 40]
 for i in list:
+    print(i)
+
+# for loop with range
+for i in range(1, -5, -1):
     print(i)
