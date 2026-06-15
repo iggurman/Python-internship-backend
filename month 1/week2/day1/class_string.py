@@ -12,7 +12,7 @@ print(str1,str2,str3)
 print(id(str1))   
 
 #to print indexing               
-print(str1[1])  #indexing is allowed 
+print(str1[1])  #indexing is allowed in strings
 
 #assigning values to a new string cause string is immutable
 new_str= "m"+str1[1:]
