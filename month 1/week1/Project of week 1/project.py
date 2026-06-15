@@ -137,19 +137,24 @@ while True:
 
         #dictionary for students management
         student={
-        "Name":stu_name,
-        "Marks":marks,
-        "Percentage":percent,
-        "Average":avg,
-        "Total Marks": total,
-        "Grade obtained":grade,
-        "Attendance": attendance,
-        "Eligibility": eligibility,
-        "Failed Subjects": failed,
-        "Highest Marks": highest,
-        "Lowest Marks": lowest,
-        "Result Status": result_status,
-        "Performance": performance,
+            "Name":stu_name,
+            "English": eng,
+            "Hindi": hindi,
+            "Maths": maths,
+            "Science": science,
+            "Sanskrit": sanskrit,
+            "Marks":marks,
+            "Percentage":percent,
+            "Average":avg,
+            "Total Marks": total,
+            "Grade obtained":grade,
+            "Attendance": attendance,
+            "Eligibility": eligibility,
+            "Failed Subjects": failed,
+            "Highest Marks": highest,
+            "Lowest Marks": lowest,
+            "Result Status": result_status,
+            "Performance": performance,
         }
         students.append(student)
         print("========================================================")
@@ -166,12 +171,12 @@ while True:
                 print("=======================")
                 
                 #ALL THE VALUES 
-                print(f"Name of English: {student['Name']}")
-                print(f"Marks of English: {eng}")
-                print(f"Marks of Hindi: {hindi}")
-                print(f"Marks of Maths: {maths}")
-                print(f"Marks of Science: {science}")
-                print(f"Marks of Sanskrit: {sanskrit}")
+                print(f"Student Name: {student['Name']}")
+                print(f"Marks of English: {student['English']}")
+                print(f"Marks of Hindi: {student['Hindi']}")
+                print(f"Marks of Maths: {student['Maths']}")
+                print(f"Marks of Science: {student['Science']}")
+                print(f"Marks of Sanskrit: {student['Sanskrit']}")
                 print(f"Percentage: {student['Percentage']}")
                 print(f"Average: {student['Average']}")
                 print(f"Total Marks: {student['Total Marks']}")
@@ -184,23 +189,27 @@ while True:
                 print(f"Result Status: {student['Result Status']}")
                 print(f"Performance: {student['Performance']}")
                 print("========================================================")
-                
+    
+    #option 3
     elif choice=="3":
-        #total number of students 
-        total_students=len(students)
-        
-        #passed students and failed students
-        passed_students=0
-        failed_students=0
-        
-        for student in students:
-            if student["Result Status"]=="PASS":
-                passed_students+=1
-            else:
-                failed_students+=1
-                
-        #class average
-        total_percent=0
+
+        if len(students) == 0:
+            print("No students available")
+
+        else:
+
+            total_students=len(students)
+
+            passed_students=0
+            failed_students=0
+
+            for student in students:
+                if student["Result Status"]=="PASS":
+                    passed_students+=1
+                else:
+                    failed_students+=1
+
+            total_percent=0
         
         for student in students:
             total_percent+=student["Percentage"]
