@@ -14,7 +14,7 @@ print(id(str1))
 #to print indexing               
 print(str1[1])  #indexing is allowed in strings
 
-#assigning values to a new string cause string is immutable
+#assigning values to a new string because string is immutable
 new_str= "m"+str1[1:]
 print(new_str)
 
@@ -40,7 +40,7 @@ last="garg"
 str1=first+" "+last #with use of 3rd variable
 print(str1)
 print(first+" "+last) #without 3rd variable
-print("yo"*5) #multiplication of strings 5 times
+print("yo "*5) #multiplication of strings 5 times
 
 # string and python both are case sensitive
 
@@ -67,13 +67,13 @@ print(text.split(" "))
 #join used to join the strings in a list to convert back to a string
 list=["banana","apple","mango"]
 print(" ".join(list))
-
+print("-----------")
 text="this is a python"
 print(text.count("a","e"))
 
 
 count=0
 for char in text:
-    if char in "aeiou":
+    if char in "a,e,i,o,u":
         count+=1
 print("count")

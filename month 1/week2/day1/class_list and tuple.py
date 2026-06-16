@@ -12,7 +12,7 @@ my_list.extend(list2)      # Add multiple values
 my_list.remove(True)       # Remove first occurrence of True
 
 my_list.pop(3)             # Remove value at index 3
-                           # If no index is given, removes last element
+# If no index is given, removes last element
 
 print(my_list.index("demo"))   # Find index of value
 print(my_list.count(12))       # Count occurrences
