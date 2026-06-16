@@ -17,10 +17,10 @@ average = total / len(marks)
 highest = max(marks)
 lowest = min(marks)
 
-print("Total Marks :", total)
-print("Average     :", average)
-print("Highest     :", highest)
-print("Lowest      :", lowest)
+print("Total Marks:", total)
+print("Average:", average)
+print("Highest:", highest)
+print("Lowest:", lowest)
 
 if average >= 35:
     print("Result : PASS")
