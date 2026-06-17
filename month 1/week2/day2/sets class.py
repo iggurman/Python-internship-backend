@@ -18,3 +18,7 @@ print(a & b)      #intersection
 print (a-b)     #difference (subtracts the values                that are comman and prints the uniques of first set that 2nd set does not have)
 
 #semantic diff returns both sets remaining values and subtracts the comman values
+^
+
+set1=set(map(int,input("enter the elements"))
+print(set1))
