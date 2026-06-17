@@ -3,7 +3,7 @@
 # Dictionary is ordered (Python 3.7+).
 # Keys are unique, but values can be duplicated.
 # Uses {} and : to separate keys and values.
-#also it replaced the value if the keys are duplicate
+#also it updates the value if the keys are duplicate
 
 # keys: int, float, str, bool, tuple, frozenset
 # values:
@@ -18,7 +18,7 @@ print(dict1.items())
 
 # Loop for accessing values
 for value in dict1.values():
-    print(value)
+    print(value) 
 
 # Loop for accessing keys and values
 student = {"maths": 98, "hindi": 67, "python": 95}
