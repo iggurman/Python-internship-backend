@@ -51,8 +51,7 @@ books = [
 ]
 
 # Lambda function for searching book by ID
-find_book = lambda bid: next(
-    (book for book in books if book["book_id"] == bid),
+find_book = lambda bid: next((book for book in books if book["book_id"] == bid),
     None
 )
 
