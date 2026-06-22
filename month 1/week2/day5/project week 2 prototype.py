@@ -86,27 +86,26 @@ print("6. Delete Book")
 print("7. Exit")
 user_option=int(input("Enter Option"))
 
-
-if user_option==1:
-    print("Add Book")
-    while True:
-        book_id=int(input("\nBook Id: "))
+while True:
+    if user_option==1:
+        print("Add Book")
+        book_id = 0
         while True:
-            if book_id.isdigit():
-                if book_id<0 or book_id>500:
-                    print("Invalid Book id ")                
-                    continue
-                break
+            book_id=int(input("Enter Book ID"))
+            if book_id<1 and book_id<500:
+                print("Invalid Book ID")
             else:
-                continue
-        break
+                print(book_id)
+                break
+                
+                
+                
+            
+            
         
-        
-    
-    
-    
-    
-    
+
+
+
     # while book_id>=500 or book_id<0:
     #     print("Invalid Book Id ")
     #     if book_id==chr(book_id):
