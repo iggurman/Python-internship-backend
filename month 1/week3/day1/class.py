@@ -44,25 +44,32 @@
 
 # 55k+ then 10% incre else 5%
 
-emp = {
-    "paridhi": 50000,
-    "gurman": 60000,
-    "avantika": 56000,
-    "hjkdf": 32000,
-    "hjdfg": 43000
-}
-result = {k: v + (v * 10 // 100) if v >= 55000 else v + (v * 5 // 100)for k, v in emp.items()}
-print(result)
+# emp = {
+#     "paridhi": 50000,
+#     "gurman": 60000,
+#     "avantika": 56000,
+#     "hjkdf": 32000,
+#     "hjdfg": 43000
+# }
+# result = {k: v + (v * 10 // 100) if v >= 55000 else v + (v * 5 // 100)for k, v in emp.items()}
+# print(result)
 
+#dictionary compre
 emp = {
-    "paridhi": {"salary": 50000,"bonus":,"total":},
-    "gurman": {"salary": 60000,"bonus":,"total":},
-    "avantika": {"salary": 56000,"bonus":,"total":},
-    "hjkdf": {"salary": 32000,"bonus":,"total":},
-    "hjdfg": {"salary": 43000,"bonus":,"total":},
+    "paridhi": {"salary": 50000, "bonus": 0, "total": 0},
+    "gurman": {"salary": 60000, "bonus": 0, "total": 0},
+    "avantika": {"salary": 56000, "bonus": 0, "total": 0},
+    "hjkdf": {"salary": 32000, "bonus": 0, "total": 0},
+    "hjdfg": {"salary": 43000, "bonus": 0, "total": 0},
 }
-dict2 = {k:{"salary":v,
-            "bonus":(v*10/100) if v>=55000 else (v*5/100),
-            "total_salary":(v*10/100)+v if v>=55000 else (v*5/100)+v} 
-            for k,v in emp.items()}
+
+dict2 = {
+    k: {
+        "salary": v["salary"],
+        "bonus": v["salary"] * 10 / 100 if v["salary"] >= 55000 else v["salary"] * 5 / 100,
+        "total_salary": v["salary"] + (v["salary"] * 10 / 100 if v["salary"] >= 55000 else v["salary"] * 5 / 100)
+    }
+    for k, v in emp.items()
+}
+
 print(dict2)
