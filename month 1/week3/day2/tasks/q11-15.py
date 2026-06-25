@@ -7,7 +7,8 @@ Examples: list, tuple, string, dictionary.
 
 Iterator: An object that returns elements one by one. It implements
 both __iter__() and __next__().
-Example: iter([1, 2, 3])
+Example: it=iter(1,2,3)
+print
 
 
 12. Can a single iterator object be reused after it is exhausted? Why or why not?
