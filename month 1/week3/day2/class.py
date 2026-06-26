@@ -31,7 +31,7 @@ while True:
         break
 
 # why we use iterators?
-# memory efficiency--instead of loading an entire dataset into memory at once, an iterator calculates and yields one item at a time    
+# memory efficiency--instead of loading an entire dataset into memory at once, an iterator calculates and returns one item at a time    
 # uniform interface-(not data specific we can use any data type it will execute) loop through diff kinds of data using for loop
 # decoupled traversal state:data objects stores only the data, store current value and move to the next value
 
