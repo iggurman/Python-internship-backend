@@ -1,0 +1,1 @@
+property attributes=no need to call it will directly print and kind of like a decorator
